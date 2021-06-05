@@ -1,0 +1,5 @@
+const JWT_EXPIRES_IN = 10800000;
+
+export {
+  JWT_EXPIRES_IN
+}

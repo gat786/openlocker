@@ -10,6 +10,7 @@ app.get("/", (req, res) => {
   res.send("Express + Typescript Server Running Baby");
 });
 
+app.use(express.json());
 app.use(logMiddleware.preServe);
 app.use("/auth", auth.router);
 app.use(logMiddleware.postServe);
